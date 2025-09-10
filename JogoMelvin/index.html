@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melvin-Pong</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+    }
+    .cor-quadrado {
+      background-color: white;
+      position: absolute; 
+    }
+    .ball{
+      border-radius: 50%;
+    }
+    .title-melvin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #ffffff, #dddddd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    letter-spacing: 2px;
+    line-height: 1.2;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+  </style>
+  <body>
+    <div class="title-melvin">
+      Melvin-Pong
+    </div>
+    <div id="score" style="color:white; font-size:32px; text-align:center; margin-top:20px;">
+      0 : 0
+    </div>    
+    <div class="cor-quadrado" id="player"></div>
+    </div>
+    <div class="cor-quadrado" id="player2"></div>
+    </div>
+    <script src="https://tom32i.github.io/gamepad.js/gamepad.js"></script>
+    <script src="jogos.js"></script>
+  </body>
+</html>
